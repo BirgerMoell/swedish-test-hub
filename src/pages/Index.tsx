@@ -39,6 +39,12 @@ const Index = () => {
             >
               Try Swedish Test
             </Button>
+            <Button 
+              onClick={() => navigate("/english-test")}
+              className="bg-swedish-blue hover:bg-swedish-blue/90 w-full"
+            >
+              Try English Test
+            </Button>
           </div>
         </div>
         <div className="lg:w-1/2 flex justify-center">
