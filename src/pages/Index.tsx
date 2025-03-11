@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import Auth from "@/components/Auth";
 import { useNavigate } from "react-router-dom";
@@ -25,12 +26,20 @@ const Index = () => {
               className="w-full h-auto object-cover"
             />
           </div>
-          <Button 
-            onClick={() => navigate("/math-test")}
-            className="bg-swedish-blue hover:bg-swedish-blue/90"
-          >
-            Try Math Test
-          </Button>
+          <div className="space-y-4">
+            <Button 
+              onClick={() => navigate("/math-test")}
+              className="bg-swedish-blue hover:bg-swedish-blue/90 w-full"
+            >
+              Try Math Test
+            </Button>
+            <Button 
+              onClick={() => navigate("/swedish-test")}
+              className="bg-swedish-blue hover:bg-swedish-blue/90 w-full"
+            >
+              Try Swedish Test
+            </Button>
+          </div>
         </div>
         <div className="lg:w-1/2 flex justify-center">
           <Auth />
