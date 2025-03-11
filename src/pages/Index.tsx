@@ -1,8 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import Auth from "@/components/Auth";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-soft-yellow to-soft-blue">
       <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -23,6 +25,12 @@ const Index = () => {
               className="w-full h-auto object-cover"
             />
           </div>
+          <Button 
+            onClick={() => navigate("/math-test")}
+            className="bg-swedish-blue hover:bg-swedish-blue/90"
+          >
+            Try Math Test
+          </Button>
         </div>
         <div className="lg:w-1/2 flex justify-center">
           <Auth />
